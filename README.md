@@ -1,2 +1,2 @@
 # happday-gmail
-Hapday HTML Gmail Template (responsive)
+It is an responsive Gmail Template for Hapday.
