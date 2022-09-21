@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Questrial&display=swap" rel="stylesheet">
+
+    <title>Hapday </title>
+</head>
+<style type="text/css">
+    body {
+        margin: auto;
+        height: 100vh;
+        width: 100%;
+        background-color: #ccc;
+        padding-bottom: 50px;
+    }
+    .wrapper {
+        table-layout: fixed;
+        margin: auto;
+        margin-top: 20px;
+        background-image: url(./img/main-back.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        height: 1092px;
+        width: 700px;
+    }
+    #logo {
+        display: flex;
+        width: 200px;
+        margin: auto;
+        justify-content: space-evenly ;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .container {
+        background-image: url(./img/back-content.png);
+        background-repeat: no-repeat;
+        height: 932px;
+        width: 620px;
+        margin: 40px;
+        box-sizing: border-box;
+    }
+    .offer {
+        margin: 40px 220px;
+        width: 180px;
+        height: 30px;
+        border: 1px solid #FF8760;
+        border-radius: 20px;
+        background-color: #FF8760;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        /* font-family: serif; */
+        font-family: 'Questrial', sans-serif;
+        font-style: normal; 
+    }
+    .container img {
+        margin: 30px 211px;
+        width: 210px;
+        height: 210px;
+    }
+    /* .container img:hover {
+        width: 220px;
+        height: 280px; 
+    } */
+    .offer-text {
+        width: 500px;
+        margin: auto;
+        margin-top: 30px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        color: #202020;
+    }
+    .offer-text a {
+        text-decoration: none;
+        color:#8A4DFE;
+    }
+    .join {
+        margin: 0px 170px;
+        margin-top: 30px;
+        width: 280px;
+        height: 70px;
+        background-color: #8A4DFE;
+        font-family: 'Questrial', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        color: #fff;
+        line-height: 120%;
+        border-radius: 40px;
+        border: none;
+    }
+    .join:hover, .offer:hover {
+        border: 1px solid #202020 ;
+    }
+    /* .morning {
+        background-image: url(./img/morning.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        position: relative;
+        width: 700px;
+        height: 380px;
+        margin: auto;
+        top: -10px;
+    } */
+    .footer {
+        margin-bottom: 60px;
+        width: 700px;
+        /* height: 100vh; */
+        background-color: #fff;
+    
+    }
+
+    /* Socials */
+    .socials {
+        margin: auto;
+        margin-top: 50px;
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-contact {
+        margin: 30px 100px;
+    }
+    .footer-contact h4 {
+        /* font-family: 'Gilroy'; */
+        font-family: 'Questrial', sans-serif;
+        font-style: normal;
+        font-weight: light;
+        font-size: 16px;
+        line-height: 17px;
+        text-align: center;
+    }
+    .footer-contact p {
+        margin: auto;
+        padding-bottom: 100px ;
+        text-align: center;
+        font-family: 'Questrial', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        width: 450px;
+    }
+    .email {
+        color: #7B35FE ;
+    }
+    .morning {
+        background-image: url(./img/morning.png);
+        background-repeat: no-repeat;
+        background-size: cover; 
+        box-sizing: border-box;
+        position: relative;
+        width: 700px;
+        height: 385px; 
+        margin: auto;
+        top: -10px;    
+    }
+
+    /* Media query */
+
+    @media all and (max-width: 600px) {
+    body {
+        margin: auto;
+        height: 100vh;
+        width: 100%;
+        background-color: #ccc;
+        /* padding-bottom: 50px; */
+        }
+    .wrapper {
+        table-layout: fixed;
+        margin: auto;
+        margin-top: 5px;
+        background-image: url(./img/main-back.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        height: 868px;
+        width: 345px;
+        }
+
+    #logo {
+        display: flex;
+        width: 131px;
+        height: 50px;
+        margin: auto;
+        justify-content: space-evenly ;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .main-logo {
+        width: 50px;
+        height: 50px;
+    }
+    .main-logo-text {
+        height: 17px;
+    }
+    .container {
+        background-image: url(./img/media-back.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+        height: 722px;
+        width: 325px;
+        margin: 10px;
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+    .container img {
+        margin: 0px 64px;
+        width: 210px;
+        height: 210px;
+    }
+    .offer {
+        margin: 30px 72px;
+        width: 180px;
+        height: 30px;
+        color: #fff;
+    }
+
+    .offer-text {
+        width: 305px;
+        height: 91;
+        margin: auto;
+        margin-top: 30px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .join {
+        margin: 0px 26px;
+        margin-top: 30px;
+        width: 280px;
+        height: 60px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        border-radius: 40px;
+        border: none;
+    }
+    .morning {
+        background-image: url(./img/morning.png);
+        background-repeat: no-repeat;
+        background-size: cover; 
+        box-sizing: border-box;
+        position: relative;
+        width: 343px;
+        height: 187px; 
+        margin: auto;
+        top: 100px;      
+    }
+
+    .footer {
+        margin-bottom: 60px;
+        width: 345px;
+        height: 600px;
+    }
+    .socials {
+        margin: auto;
+        margin-top: 150px;
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-contact {
+        margin: 0px 0px;
+    }
+    .footer-contact h4 {
+        margin-top: 40px;
+        font-size: 14px;
+    }
+    .footer-contact p {
+        margin: auto;
+        margin-top: 40px;
+        font-weight: 500;
+        font-size: 14px;
+        width: 305px;
+    }       
+}
+
+</style>
+
+            <!-- HTML Coding  -->
+
+<body>
+    <div class="wrapper">
+    <!-- Logo   -->
+        <div id="logo">
+            <img class="main-logo" src="./img/logo.png">
+            <img class="main-logo-text" src="./img/hapday.png">
+        </div>
+
+    <!-- Content -->
+    <div class="container">
+        <button class="offer">LIMITED TIME OFFER</button>
+
+        <img class="discount" src="./img/off.png" alt="discount">
+
+        <p class="offer-text">
+            Hi Denis. You’re discount is inside, just a click away from more sleep, less stress, and a happier, healthier life – <a href="#">all for 40% off the original price!</a> 
+
+
+
+           <p class="offer-text">Redeem this exclusive offer and enjoy unlimited access to hundreds of hours of audio content, like Sleep Stories, meditations, soundscapes and music – as well as interactive features like mood check ins, graditude reflections, breathing techniques and gentle movement guides.</p>
+
+
+           <p class="offer-text">Click the offer bellow and learn the tools to grow into a better version of yourself.</p>
+
+        </p>
+
+        <button class="join">Join with 40% Off</button>
+
+    </div>
+
+    <!-- Footer -->
+
+
+    <div class="footer">
+
+         <div class="morning">
+        
+         </div>
+
+
+         <div class="socials">
+            <a href="#"><img src="./img/instagram.png" alt="Instagarm"></a>
+            <a href="#"><img src="./img/Vector (3).png" alt="Twitter"></a> 
+            <a href="#"><img src="./img/Vector (4).png" alt="Facebook"></a>
+         </div>
+
+         <div class="footer-contact">
+            <h4>Have a question? Send us message <span class="email">contact@haaaaaaappy.com</span></h4>
+
+            <p>You received this email as a registered  user of Hapday - FZE DSO-THUB-G-D-FLEX-G109D, DTEC, Dubai Silicon Oasis, Dubai.</p>
+
+         </div>
+
+    </div>
+
+
+</div>
+    
+</body>
+</html>
